@@ -26,7 +26,18 @@ pip install -U neovim
 sudo apt install fish -y
 sudo apt install trash-cli -y
 sudo apt install bat -y
+sudo apt install fzf -y
 
+# download exa
+mkdir -p exa
+cd exa
+wget https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+unzip exa-linux-x86_64-v0.10.1.zip
+sudo mv ./bin/exa /usr/local/bin
+cd ..
+rm -rf exa
+
+# download fish
 mkdir -p ~/.config/fish
 rm -rf ~/.config/fish
 git clone git@github.com:jjshoots/fish_dotfiles.git ~/.config/fish
