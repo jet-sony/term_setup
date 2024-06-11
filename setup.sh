@@ -41,3 +41,5 @@ rm -rf exa
 mkdir -p ~/.config/fish
 rm -rf ~/.config/fish
 git clone git@github.com:jjshoots/fish_dotfiles.git ~/.config/fish
+
+echo "fish" >> ~/.bashrc
