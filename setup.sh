@@ -13,13 +13,15 @@ sudo mv nvim.appimage /usr/local/bin/nvim
 sudo apt install silversearcher-ag ripgrep -y
 
 # neovim setting
-mkdir -p ~/.config/nvim
-rm -rf ~/.config/nvim
-git clone git@github.com:jjshoots/nvim_dotfiles.git ~/.config/nvim
+mkdir -p /home/dev/.config/nvim
+rm -rf /home/dev/.config/nvim
+git clone git@github.com:jjshoots/nvim_dotfiles.git /home/dev/.config/nvim
 
-# install neovim library
+# install neovim library and doq for vim/pydocstring
 pip install -U neovim
-
+pip install -U doq
+touch /home/dev/.config/nvim/vim/set.vim
+echo "let g:pydocstring_doq_path = $(which doq)" > /home/dev/.config/nvim/vim/set.vim
 
 ################################################################ FISH
 # install fish and some other utils
