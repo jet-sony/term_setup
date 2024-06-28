@@ -17,8 +17,10 @@ mkdir -p /home/dev/.config/nvim
 rm -rf /home/dev/.config/nvim
 git clone git@github.com:jjshoots/nvim_dotfiles.git /home/dev/.config/nvim
 
-# install neovim library and doq for vim/pydocstring
+# install neovim library
 pip install -U neovim
+
+# install doq for vim/pydocstring
 pip install -U doq
 touch /home/dev/.config/nvim/vim/set.vim
 echo "let g:pydocstring_doq_path = $(which doq)" > /home/dev/.config/nvim/vim/set.vim
