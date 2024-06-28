@@ -23,7 +23,7 @@ pip install -U neovim
 # install doq for vim/pydocstring
 pip install -U doq
 touch /home/dev/.config/nvim/vim/set.vim
-echo "let g:pydocstring_doq_path = $(which doq)" > /home/dev/.config/nvim/vim/set.vim
+echo 'let g:pydocstring_doq_path = "$(which doq)"' > /home/dev/.config/nvim/vim/set.vim
 
 ################################################################ FISH
 # install fish and some other utils
