@@ -7,7 +7,7 @@ sudo apt update
 sudo apt install software-properties-common -y
 
 # install neovim
-wget https://github.com/neovim/neovim/releases/download/v0.9.0/nvim.appimage
+wget https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
 chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 sudo apt install silversearcher-ag ripgrep -y
