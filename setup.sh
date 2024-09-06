@@ -46,5 +46,3 @@ git clone git@github.com:jjshoots/fish_dotfiles.git ~/.config/fish
 
 echo "fish" >> ~/.bashrc
 echo "export PS4_ADDR=192.168.11.95"
-
-fish
